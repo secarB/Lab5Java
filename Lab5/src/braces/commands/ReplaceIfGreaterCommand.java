@@ -2,7 +2,9 @@ package braces.commands;
 
 import braces.core.Asker;
 import braces.core.CollectionManager;
-
+/**
+ * Class for replace if greater command
+ */
 public class ReplaceIfGreaterCommand extends AbstractCommand{
     private CollectionManager collectionManager;
     private Asker asker;

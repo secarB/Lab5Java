@@ -48,7 +48,7 @@ public class Asker {
     public long generateID()
     {
         Integer newID = new Random().nextInt();
-        if (CollectionManager.IDChecker.contains(newID) || newID < 0)
+        if (CollectionManager.IDChecker.contains(newID) || newID <= 0)
             return generateID();
         else
         {
@@ -113,7 +113,7 @@ public class Asker {
             if (input.length != 1) {
                 System.out.println("Please insert exactly one number!");
             } else {
-                if (!inputChecker.longValidCheck(input[0], (long) 0, Long.MAX_VALUE)) continue;
+                if (!inputChecker.longValidCheck(input[0], (long) 1, Long.MAX_VALUE)) continue;
                 return Long.parseLong(input[0]);
             }
         }
@@ -205,7 +205,22 @@ public class Asker {
     {
         Chapter chapter = new Chapter();
         System.out.println("Insert name, parent legion, marines count, world: ");
-        System.out.println("Insert chapter name: ");
+        while (true) {
+        	  String[] input = scanner.nextLine().trim().split(" ");
+        	  if (input.length != 4)
+        		  System.out.println("Insert 4 para"); else {
+	        	  if (!chapter.setName(input[0])) continue;
+	        	  chapter.setParentLegion(input[1]);
+	        	  if (!inputChecker.integerValidCheck(input[2],1,1000)) {
+	        		  chapter.setMarinesCount(Integer.parseInt(input[2]));
+	        		  continue;
+	        		  }
+	        	  if (!chapter.setWorld(input[3])) continue;
+	        	  return chapter; 
+        		  }
+        	  
+		}
+        /* System.out.println("Insert chapter name: ");
         while (true) {
             String[] input = scanner.nextLine().trim().split(" ");
             if (input.length != 1) {
@@ -240,9 +255,8 @@ public class Asker {
             } else {
                 if (chapter.setWorld(inputt[0])) break;
             }
+        } */
         }
-        return chapter;
-    }
 
 
 

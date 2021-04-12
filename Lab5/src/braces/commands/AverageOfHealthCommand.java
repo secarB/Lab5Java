@@ -2,7 +2,9 @@ package braces.commands;
 
 import braces.core.Asker;
 import braces.core.CollectionManager;
-
+/**
+ * Class for the get average of health command
+ */
 public class AverageOfHealthCommand extends AbstractCommand{
     private CollectionManager collectionManager;
     public  AverageOfHealthCommand(CollectionManager collectionManager)

@@ -1,7 +1,9 @@
 package braces.commands;
 
 import braces.core.CollectionManager;
-
+/**
+ * Class for save command
+ */
 public class SaveCommand extends AbstractCommand{
     private CollectionManager collectionManager;
     public SaveCommand(CollectionManager collectionManager)

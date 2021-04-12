@@ -2,7 +2,9 @@ package braces.commands;
 
 import braces.core.Asker;
 import braces.core.CollectionManager;
-
+/**
+ * Class for help command
+ */
 public class HelpCommand extends AbstractCommand{
     private CollectionManager   collectionManager;
     public HelpCommand(CollectionManager collectionManager)

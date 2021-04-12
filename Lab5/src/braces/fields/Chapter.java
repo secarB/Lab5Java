@@ -1,4 +1,7 @@
 package braces.fields;
+/**
+ * Class chapter
+ */
 public class Chapter {
     private String name; //Can't be null, String can't be empty
     private String parentLegion;

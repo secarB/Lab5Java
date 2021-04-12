@@ -41,7 +41,11 @@ public class CSVParser {
                 Coordinates coordinates = new Coordinates();
                 String data[] = new String [12];
                 int index = 0;
+                String key = "";
                 while (dataScanner.hasNext()) {
+                	if (index == 0) {
+                		key = dataScanner.next();
+                	}
                     data[index] = dataScanner.next();
                     index++;
                     if (index > 11) {
@@ -162,7 +166,7 @@ public class CSVParser {
                     if (!check) throw new Exception();
                     LocalDate date = LocalDate.now();
                     spaceMarine.setCreationDate(date);
-                    map.put(id.toString(), spaceMarine);
+                    map.put(key, spaceMarine);	
                     CollectionManager.IDChecker.add(id);
                     id++;
                 }

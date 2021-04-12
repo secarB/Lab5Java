@@ -23,6 +23,7 @@ public class CollectionManager {
     }
     /**
      * Get date creation from CSVParse
+     * @return date creation
      */
     public String getCreationDate()
     {

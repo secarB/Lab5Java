@@ -1,4 +1,7 @@
 package braces.fields;
+/**
+ * Class coordinates
+ */
 public class Coordinates {
     private Integer x; //Can't be null
     private long y; //Max:316

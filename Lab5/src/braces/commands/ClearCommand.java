@@ -2,7 +2,9 @@ package braces.commands;
 
 import braces.core.Asker;
 import braces.core.CollectionManager;
-
+/**
+ * Class for clear command
+ */
 public class ClearCommand extends AbstractCommand {
     private CollectionManager collectionManager;
     public ClearCommand(CollectionManager collectionManager)

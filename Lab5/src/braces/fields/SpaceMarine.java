@@ -1,7 +1,7 @@
 package braces.fields;
-
-import braces.fields.comparator.ComparebyHealth;
-
+/**
+ * Class space marine
+ */
 public class SpaceMarine implements Comparable<SpaceMarine> {
     private long id; //The field value must be greater than 0, The value of this field must be unique, The value of this field must be generated automatically
     private String name; //Can't be null, String can't be empty

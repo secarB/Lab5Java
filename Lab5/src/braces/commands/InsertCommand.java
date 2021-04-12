@@ -2,7 +2,9 @@ package braces.commands;
 
 import braces.core.Asker;
 import braces.core.CollectionManager;
-
+/**
+ * Class for insert command
+ */
 public class InsertCommand extends AbstractCommand{
     private CollectionManager collectionManager;
     private Asker asker;

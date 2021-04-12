@@ -2,7 +2,9 @@ package braces.commands;
 
 import braces.core.InputChecker;
 import braces.core.CollectionManager;
-
+/**
+ * Class for count greater than height command
+ */
 public class CountGreaterThanHeightCommand extends AbstractCommand{
     private CollectionManager collectionManager;
     private InputChecker inputChecker;
