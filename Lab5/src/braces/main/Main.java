@@ -14,7 +14,6 @@ public class Main
 {
     static String fileName ;
     public static void main(String[] args) {
-    	
         try {
             fileName = args[0];
         } catch (ArrayIndexOutOfBoundsException e) {

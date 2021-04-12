@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="braces.core.Asker" project="Lab5" file="/Lab5/src/braces/core/Asker.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="202" x="2795" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="braces.core.CSVParser" project="Lab5" file="/Lab5/src/braces/core/CSVParser.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="241" x="2367" y="1259"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="braces.core.CommandManager" project="Lab5" 
+    file="/Lab5/src/braces/core/CommandManager.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="351" width="870" x="216" y="423"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="braces.core.Commander" project="Lab5" file="/Lab5/src/braces/core/Commander.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="254" x="216" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="braces.core.InputChecker" project="Lab5" 
+    file="/Lab5/src/braces/core/InputChecker.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="230" x="4066" y="814"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="braces.core.CollectionManager" project="Lab5" 
+    file="/Lab5/src/braces/core/CollectionManager.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="405" width="242" x="2366" y="814"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="braces.commands.ReplaceIfGreaterCommand" project="Lab5" 
+    file="/Lab5/src/braces/commands/ReplaceIfGreaterCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="282" x="2038" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="braces.commands.InfoCommand" project="Lab5" 
+    file="/Lab5/src/braces/commands/InfoCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="187" x="1058" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="braces.commands.SaveCommand" project="Lab5" 
+    file="/Lab5/src/braces/commands/SaveCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="194" x="824" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="braces.commands.CountGreaterThanHeightCommand" project="Lab5" 
+    file="/Lab5/src/braces/commands/CountGreaterThanHeightCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="353" x="4066" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="braces.commands.RemoveCommand" project="Lab5" 
+    file="/Lab5/src/braces/commands/RemoveCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="239" x="2909" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="braces.commands.ShowCommand" project="Lab5" 
+    file="/Lab5/src/braces/commands/ShowCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="198" x="2671" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="braces.commands.RemoveLowerCommand" project="Lab5" 
+    file="/Lab5/src/braces/commands/RemoveLowerCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="271" x="2360" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="braces.commands.MinByHealthCommand" project="Lab5" 
+    file="/Lab5/src/braces/commands/MinByHealthCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="228" x="1749" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="braces.commands.AbstractCommand" project="Lab5" 
+    file="/Lab5/src/braces/commands/AbstractCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="142" x="1749" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="braces.commands.ClearCommand" project="Lab5" 
+    file="/Lab5/src/braces/commands/ClearCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="194" x="1285" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="braces.commands.ExitCommand" project="Lab5" 
+    file="/Lab5/src/braces/commands/ExitCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="114" x="62" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="braces.commands.HelpCommand" project="Lab5" 
+    file="/Lab5/src/braces/commands/HelpCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="190" x="1519" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="braces.commands.UpdateCommand" project="Lab5" 
+    file="/Lab5/src/braces/commands/UpdateCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="234" x="3792" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="braces.commands.RemoveGreaterCommand" project="Lab5" 
+    file="/Lab5/src/braces/commands/RemoveGreaterCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="276" x="3455" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="braces.commands.InsertCommand" project="Lab5" 
+    file="/Lab5/src/braces/commands/InsertCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="227" x="3188" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="braces.commands.AverageOfHealthCommand" project="Lab5" 
+    file="/Lab5/src/braces/commands/AverageOfHealthCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="253" x="531" y="194"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="23" language="java" name="braces.commands.Command" project="Lab5" 
+    file="/Lab5/src/braces/commands/Command.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="142" x="216" y="814"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <enumeration id="24" language="java" name="braces.fields.AstartesCategory" project="Lab5" 
+    file="/Lab5/src/braces/fields/AstartesCategory.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="194" x="2508" y="2005"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="25" language="java" name="braces.fields.Coordinates" project="Lab5" 
+    file="/Lab5/src/braces/fields/Coordinates.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="182" x="2742" y="2005"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="braces.fields.SpaceMarine" project="Lab5" 
+    file="/Lab5/src/braces/fields/SpaceMarine.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="531" width="226" x="2755" y="1434"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="braces.fields.Chapter" project="Lab5" file="/Lab5/src/braces/fields/Chapter.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="167" x="2964" y="2005"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="28" language="java" name="braces.fields.MeleeWeapon" project="Lab5" 
+    file="/Lab5/src/braces/fields/MeleeWeapon.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="183" x="2285" y="2005"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="29" language="java" name="braces.main.Main" project="Lab5" file="/Lab5/src/braces/main/Main.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="113" x="2038" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="30">    
+    <bendpoint x="2617" y="1434"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="25"/>  
+  </dependency>  
+  <dependency id="31">    
+    <bendpoint x="2638" y="423"/>    
+    <bendpoint x="2638" y="814"/>    
+    <bendpoint x="2722" y="1259"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <dependency id="32">    
+    <bendpoint x="3048" y="423"/>    
+    <bendpoint x="3048" y="814"/>    
+    <bendpoint x="3006" y="1259"/>    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <association id="33">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="34" name="ShowCommand"/>      
+      <multiplicity id="35" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="36">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <association id="37">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="38" name="InsertCommand"/>      
+      <multiplicity id="39" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="40">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="41" name="HelpCommand"/>      
+      <multiplicity id="42" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="43">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="44" name="RemoveGreaterCommand"/>      
+      <multiplicity id="45" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="46">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <generalization id="47">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <association id="48">    
+    <bendpoint x="1604" y="423"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="49" name="collectionManager"/>      
+      <multiplicity id="50" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="51">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="52" name="inputChecker"/>      
+      <multiplicity id="53" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="54">    
+    <bendpoint x="1721" y="423"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="55" name="collectionManager"/>      
+      <multiplicity id="56" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="57">    
+    <bendpoint x="2211" y="423"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="58" name="collectionManager"/>      
+      <multiplicity id="59" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="60">    
+    <bendpoint x="2447" y="1434"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="24"/>  
+  </dependency>  
+  <generalization id="61">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <dependency id="62">    
+    <bendpoint x="2659" y="814"/>    
+    <bendpoint x="2659" y="1259"/>    
+    <bendpoint x="2596" y="1434"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="63">    
+    <bendpoint x="2638" y="1259"/>    
+    <bendpoint x="2638" y="1434"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="25"/>  
+  </dependency>  
+  <generalization id="64">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <realization id="65">    
+    <bendpoint x="31" y="194"/>    
+    <bendpoint x="31" y="423"/>    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="23"/>  
+  </realization>  
+  <dependency id="66">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <association id="67">    
+    <bendpoint x="4075" y="423"/>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="68" name="inputChecker"/>      
+      <multiplicity id="69" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="70">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="71">    
+    <bendpoint x="2680" y="423"/>    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="72" name="collectionManager"/>      
+      <multiplicity id="73" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="74">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <dependency id="75">    
+    <bendpoint x="3111" y="423"/>    
+    <bendpoint x="3111" y="814"/>    
+    <bendpoint x="3111" y="1259"/>    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <association id="76">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="77" name="SaveCommand"/>      
+      <multiplicity id="78" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="79">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="80" name="asker"/>      
+      <multiplicity id="81" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="82">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="83" name="category"/>      
+      <multiplicity id="84" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="85">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="21"/>  
+  </dependency>  
+  <association id="86">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="87" name="UpdateCommand"/>      
+      <multiplicity id="88" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="89">    
+    <bendpoint x="3069" y="423"/>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="90" name="collectionManager"/>      
+      <multiplicity id="91" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="92">    
+    <bendpoint x="2294" y="1259"/>    
+    <bendpoint x="2294" y="1434"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <association id="93">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="94" name="asker"/>      
+      <multiplicity id="95" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="96">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <dependency id="97">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="98">    
+    <bendpoint x="2315" y="1434"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="28"/>  
+  </dependency>  
+  <dependency id="99">    
+    <bendpoint x="3027" y="814"/>    
+    <bendpoint x="3027" y="1259"/>    
+    <bendpoint x="3027" y="1434"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="25"/>  
+  </dependency>  
+  <association id="100">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="101" name="coordinates"/>      
+      <multiplicity id="102" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="103">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <association id="104">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="105" name="chapter"/>      
+      <multiplicity id="106" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="107">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <association id="108">    
+    <bendpoint x="2659" y="423"/>    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="109" name="collectionManager"/>      
+      <multiplicity id="110" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="111">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="112" name="RemoveCommand"/>      
+      <multiplicity id="113" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="114">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="115" name="csvParser"/>      
+      <multiplicity id="116" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="117">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="118" name="meleeWeapon"/>      
+      <multiplicity id="119" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="28" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="120">    
+    <bendpoint x="500" y="194"/>    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="121">    
+    <bendpoint x="2007" y="194"/>    
+    <bendpoint x="2007" y="423"/>    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="122">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="10"/>  
+  </dependency>  
+  <dependency id="123">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="9"/>  
+  </dependency>  
+  <dependency id="124">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <generalization id="125">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <association id="126">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="127" name="MinByHealthCommand"/>      
+      <multiplicity id="128" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="129">    
+    <bendpoint x="2701" y="423"/>    
+    <bendpoint x="2722" y="814"/>    
+    <bendpoint x="2764" y="1259"/>    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <association id="130">    
+    <bendpoint x="2743" y="423"/>    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="131" name="collectionManager"/>      
+      <multiplicity id="132" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="133">    
+    <bendpoint x="2764" y="423"/>    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="134" name="collectionManager"/>      
+      <multiplicity id="135" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="136">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <dependency id="137">    
+    <bendpoint x="2785" y="814"/>    
+    <bendpoint x="2785" y="1259"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <association id="138">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="139" name="ClearCommand"/>      
+      <multiplicity id="140" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="141">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="142" name="asker"/>      
+      <multiplicity id="143" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="144">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="145" name="commandManager"/>      
+      <multiplicity id="146" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="147">    
+    <bendpoint x="1834" y="423"/>    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="148" name="collectionManager"/>      
+      <multiplicity id="149" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="150">    
+    <bendpoint x="2701" y="1259"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="151" name="map"/>      
+      <multiplicity id="152" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="153">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <association id="154">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="155" name="RemoveLowerCommand"/>      
+      <multiplicity id="156" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="157">    
+    <bendpoint x="3090" y="423"/>    
+    <bendpoint x="3090" y="814"/>    
+    <bendpoint x="3090" y="1259"/>    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <association id="158">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="159" name="asker"/>      
+      <multiplicity id="160" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="161">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="6"/>  
+  </dependency>  
+  <dependency id="162">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="12"/>  
+  </dependency>  
+  <dependency id="163">    
+    <bendpoint x="2743" y="814"/>    
+    <bendpoint x="2743" y="1259"/>    
+    <bendpoint x="2703" y="1434"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="24"/>  
+  </dependency>  
+  <generalization id="164">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <generalization id="165">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <dependency id="166">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="18"/>  
+  </dependency>  
+  <generalization id="167">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <dependency id="168">    
+    <bendpoint x="4449" y="194"/>    
+    <bendpoint x="4449" y="423"/>    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="5"/>  
+  </dependency>  
+  <generalization id="169">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <generalization id="170">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <dependency id="171">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="8"/>  
+  </dependency>  
+  <dependency id="172">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <association id="173">    
+    <bendpoint x="3027" y="423"/>    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="174" name="collectionManager"/>      
+      <multiplicity id="175" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="176">    
+    <bendpoint x="1951" y="423"/>    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="177" name="collectionManager"/>      
+      <multiplicity id="178" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="179">    
+    <bendpoint x="2336" y="1259"/>    
+    <bendpoint x="2336" y="1434"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="24"/>  
+  </dependency>  
+  <association id="180">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="181" name="asker"/>      
+      <multiplicity id="182" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="183">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="184" name="AverageOfHealthCommand"/>      
+      <multiplicity id="185" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="186">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="187" name="asker"/>      
+      <multiplicity id="188" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="189">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="190" name="ExitCommand"/>      
+      <multiplicity id="191" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="192">    
+    <bendpoint x="1458" y="423"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="193" name="collectionManager"/>      
+      <multiplicity id="194" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="195">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <association id="196">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="197" name="CountGreaterThanHeightCommand"/>      
+      <multiplicity id="198" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="199">    
+    <bendpoint x="2680" y="1259"/>    
+    <bendpoint x="2724" y="1434"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <dependency id="200">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="20"/>  
+  </dependency>  
+  <dependency id="201">    
+    <bendpoint x="3761" y="194"/>    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="202">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="203" name="ReplaceIfGreaterCommand"/>      
+      <multiplicity id="204" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="205">    
+    <bendpoint x="2675" y="1434"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <dependency id="206">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="7"/>  
+  </dependency>  
+  <generalization id="207">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <generalization id="208">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <dependency id="209">    
+    <bendpoint x="3069" y="814"/>    
+    <bendpoint x="3132" y="1259"/>    
+    <bendpoint x="3132" y="1434"/>    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <association id="210">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="211" name="InfoCommand"/>      
+      <multiplicity id="212" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="213">    
+    <bendpoint x="1986" y="423"/>    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="214" name="collectionManager"/>      
+      <multiplicity id="215" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="216">    
+    <bendpoint x="2722" y="423"/>    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="217" name="collectionManager"/>      
+      <multiplicity id="218" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="true" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
