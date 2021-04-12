@@ -1,0 +1,250 @@
+package braces.core;
+import braces.fields.*;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.Random;
+import java.util.Scanner;
+
+/**
+ * This class use to get info when create a new element
+ */
+public class Asker {
+    private static final Scanner scanner = new Scanner(System.in);
+    private final InputChecker inputChecker;
+
+    /**
+     * Constructor
+     * @param ic input checker
+     */
+    public Asker(InputChecker ic){
+        this.inputChecker = ic;
+    }
+
+    /**
+     * Returns a space marine
+     * @return space marine to be returned
+     */
+    public SpaceMarine createSpaceMarine()
+    {
+        SpaceMarine spaceMarine = new SpaceMarine();
+        spaceMarine.setId(generateID());
+        spaceMarine.setName(nameAsker());
+        spaceMarine.setCoordinates(coordinatesAsker());
+        spaceMarine.setHeight(heightAsker());
+        spaceMarine.setHealth(healthAsker());
+        spaceMarine.setCategory(categoryAsker());
+        spaceMarine.setMeleeWeapon(meleeWeaponAsker());
+        spaceMarine.setChapter(chapterAsker());
+        LocalDate date = LocalDate.now();
+        spaceMarine.setCreationDate(date);
+        return spaceMarine;
+    }
+
+    /**
+     * Automatically generates an ID
+     * @return id
+     */
+    public long generateID()
+    {
+        Integer newID = new Random().nextInt();
+        if (CollectionManager.IDChecker.contains(newID) || newID < 0)
+            return generateID();
+        else
+        {
+            CollectionManager.IDChecker.add(newID);
+            System.out.println("ID = " + newID + " is successfully generated!");
+            return newID;
+        }
+    }
+
+    /**
+     * Gets name from scanner
+     * @return name
+     */
+    public String nameAsker()
+    {
+        System.out.println("Insert name: ");
+        return (scanner.nextLine());
+    }
+
+    /**
+     * Gets coordinates from scanner
+     * @return coordinates
+     */
+    public Coordinates coordinatesAsker(){
+        System.out.println("Insert coordinates: ");
+        while (true) {
+            System.out.println("Insert x and y:");
+            Coordinates coordinates = new Coordinates();
+            String[] input = scanner.nextLine().trim().split(" ");
+            if(input.length != 2 ){
+                System.out.println("please insert exactly two number!");
+            }
+            else
+            {   if (!inputChecker.integerValidCheck(input[0],Integer.MIN_VALUE,Integer.MAX_VALUE))
+                    continue;
+                if (!inputChecker.longValidCheck(input[0],Long.MIN_VALUE,(long)316))
+                    continue;
+                coordinates.setXCoordinate(Integer.parseInt(input[0]));
+                coordinates.setYCoordinate(Long.parseLong(input[1]));
+            }
+            return coordinates;
+        }
+    }
+
+    /**
+     * Gets current date
+     * @return current date
+     */
+    public LocalDateTime dateGenerator(){
+        return java.time.LocalDateTime.now();
+    }
+
+    /**
+     * Gets health from scanner
+     * @return health
+     */
+    public long healthAsker()
+    {
+        System.out.println("Insert health: ");
+        while (true) {
+            String[] input = scanner.nextLine().trim().split(" ");
+            if (input.length != 1) {
+                System.out.println("Please insert exactly one number!");
+            } else {
+                if (!inputChecker.longValidCheck(input[0], (long) 0, Long.MAX_VALUE)) continue;
+                return Long.parseLong(input[0]);
+            }
+        }
+    }
+
+    /**
+     * Gets height from scanner
+     * @return height
+     */
+    public long heightAsker()
+    {
+        System.out.println("Insert height: ");
+        while (true)
+        {
+            String[] input = scanner.nextLine().trim().split(" ");
+            if(input.length != 1 ) {
+                System.out.println("Please insert exactly one number!");
+                return healthAsker();
+            }
+            else
+            {
+                if (!inputChecker.longValidCheck(input[0], Long.MIN_VALUE, Long.MAX_VALUE)) continue;
+                return Long.parseLong(input[0]);
+            }
+        }
+
+    }
+
+    /**
+     * Gets category from scanner
+     * @return Astartes Category
+     */
+    public AstartesCategory categoryAsker()
+    {
+        System.out.println("Insert Astartes Category: ");
+        String[] input = scanner.nextLine().trim().split(" ");
+        if(input.length != 1 ) {
+            System.out.println("Please insert exactly one category!");
+            return categoryAsker();
+        }
+        else
+        {
+            try {
+                return AstartesCategory.valueOf(input[0]);
+            } catch(IllegalArgumentException e){
+                System.out.println("Invalid category! The category is not in the list!");
+                System.out.println("Please insert one of these following categories");
+                for (AstartesCategory category : AstartesCategory.values()){
+                    System.out.println(category);
+                }
+                return categoryAsker();
+            }
+        }
+    }
+
+    /**
+     * Gets melee weapon from scanner
+     * @return Melee weapon
+     */
+    public MeleeWeapon meleeWeaponAsker()
+    {
+        System.out.println("Insert Melee Weapon: ");
+        String[] input = scanner.nextLine().trim().split(" ");
+        if(input.length != 1 ) {
+            System.out.println("Please insert exactly one melee weapon!");
+            return meleeWeaponAsker();
+        }
+        else
+        {
+
+            try {
+                return  MeleeWeapon.valueOf(input[0]);
+            } catch(IllegalArgumentException e){
+                System.out.println("Invalid Melee Weapon! The melee weapon is not in the list!");
+                System.out.println("Please insert one of these following melee weapons");
+                for (MeleeWeapon meleeWeapon : MeleeWeapon.values()){
+                    System.out.println(meleeWeapon);
+                }
+                return meleeWeaponAsker();
+            }
+        }
+    }
+
+    /**
+     * Gets chapter from scanner
+     * @return Chapter
+     */
+    public Chapter chapterAsker()
+    {
+        Chapter chapter = new Chapter();
+        System.out.println("Insert name, parent legion, marines count, world: ");
+        System.out.println("Insert chapter name: ");
+        while (true) {
+            String[] input = scanner.nextLine().trim().split(" ");
+            if (input.length != 1) {
+                System.out.println("Please insert one chapter name");
+                } else {
+                    if (chapter.setName(input[0])) break;
+                System.out.println("Name can be null or empty, please enter a name :<");
+                }
+        }
+        System.out.println("Insert chapter parent legion: ");
+        String[] input = scanner.nextLine().trim().split(" ");
+        chapter.setParentLegion(input[0]);
+        System.out.println("Insert chapter marines count: ");
+        while (true)
+        {
+            String[] inputt = scanner.nextLine().trim().split(" ");
+            if (inputt.length != 1) {
+                System.out.println("Please insert one chapter marines count");
+            } else {
+                if (inputChecker.integerValidCheck(inputt[0],0,1000))
+                {
+                    chapter.setMarinesCount(Integer.parseInt(inputt[0]));
+                    break;
+                }
+            }
+        }
+        while (true) {
+            System.out.println("Insert chapter world ");
+            String[] inputt = scanner.nextLine().trim().split(" ");
+            if (inputt.length != 1) {
+                System.out.println("Please insert one chapter world");
+            } else {
+                if (chapter.setWorld(inputt[0])) break;
+            }
+        }
+        return chapter;
+    }
+
+
+
+
+}
