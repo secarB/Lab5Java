@@ -64,8 +64,16 @@ public class Asker {
      */
     public String nameAsker()
     {
-        System.out.println("Insert name: ");
-        return (scanner.nextLine());
+    	System.out.println("Insert name: ");
+        while (true) {
+        	String[] input = scanner.nextLine().trim().split(" ");
+            if (input.length != 1) {
+                System.out.println("Please insert 1 name!");
+            } else {
+            	if ((input[0] != null) && (!input[0].equals(""))) return input[0];
+            	System.out.println("Name can't be null or empty");
+            }
+        }
     }
 
     /**
@@ -88,8 +96,9 @@ public class Asker {
                     continue;
                 coordinates.setXCoordinate(Integer.parseInt(input[0]));
                 coordinates.setYCoordinate(Long.parseLong(input[1]));
+                return coordinates;
             }
-            return coordinates;
+            
         }
     }
 
@@ -149,6 +158,10 @@ public class Asker {
     public AstartesCategory categoryAsker()
     {
         System.out.println("Insert Astartes Category: ");
+        System.out.println("Please insert one of these following categories");
+        for (AstartesCategory category : AstartesCategory.values()){
+            System.out.println(category);
+        }
         String[] input = scanner.nextLine().trim().split(" ");
         if(input.length != 1 ) {
             System.out.println("Please insert exactly one category!");
@@ -160,10 +173,6 @@ public class Asker {
                 return AstartesCategory.valueOf(input[0]);
             } catch(IllegalArgumentException e){
                 System.out.println("Invalid category! The category is not in the list!");
-                System.out.println("Please insert one of these following categories");
-                for (AstartesCategory category : AstartesCategory.values()){
-                    System.out.println(category);
-                }
                 return categoryAsker();
             }
         }
@@ -176,6 +185,10 @@ public class Asker {
     public MeleeWeapon meleeWeaponAsker()
     {
         System.out.println("Insert Melee Weapon: ");
+        System.out.println("Please insert one of these following melee weapons");
+        for (MeleeWeapon meleeWeapon : MeleeWeapon.values()){
+            System.out.println(meleeWeapon);
+        }
         String[] input = scanner.nextLine().trim().split(" ");
         if(input.length != 1 ) {
             System.out.println("Please insert exactly one melee weapon!");
@@ -188,10 +201,6 @@ public class Asker {
                 return  MeleeWeapon.valueOf(input[0]);
             } catch(IllegalArgumentException e){
                 System.out.println("Invalid Melee Weapon! The melee weapon is not in the list!");
-                System.out.println("Please insert one of these following melee weapons");
-                for (MeleeWeapon meleeWeapon : MeleeWeapon.values()){
-                    System.out.println(meleeWeapon);
-                }
                 return meleeWeaponAsker();
             }
         }
@@ -205,7 +214,7 @@ public class Asker {
     {
         Chapter chapter = new Chapter();
         System.out.println("Insert name, parent legion, marines count, world: ");
-        while (true) {
+        /* while (true) {
         	  String[] input = scanner.nextLine().trim().split(" ");
         	  if (input.length != 4)
         		  System.out.println("Insert 4 para"); else {
@@ -219,8 +228,8 @@ public class Asker {
 	        	  return chapter; 
         		  }
         	  
-		}
-        /* System.out.println("Insert chapter name: ");
+		} */
+        System.out.println("Insert chapter name: ");
         while (true) {
             String[] input = scanner.nextLine().trim().split(" ");
             if (input.length != 1) {
@@ -255,7 +264,8 @@ public class Asker {
             } else {
                 if (chapter.setWorld(inputt[0])) break;
             }
-        } */
+        }
+        return chapter;
         }
 
 

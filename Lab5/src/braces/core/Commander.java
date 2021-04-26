@@ -31,7 +31,7 @@ public class Commander {
      */
     public void interactiveMode()
     {
-        while (true)
+        while (userScanner.hasNextLine())
         {
             String[] userCommand  = userScanner.nextLine().trim().split(" ");
             if(userCommand.length > 2 ){
@@ -46,7 +46,6 @@ public class Commander {
                 System.out.println("Command is invalid. Can't execute!");
                 continue;
             }
-            System.out.println("----------------------");
         }
 
     }
@@ -85,7 +84,6 @@ public class Commander {
                 System.out.println("Command is invalid. Can't execute!");
                 continue;
             }
-            System.out.println("------------");
         }
         inStack.put(fileName, false);
         return true;
@@ -104,6 +102,8 @@ public class Commander {
                     return !commandManager.help();
                 }
                 return true;
+            case "":
+            	return false;
             case "info":
                 if(userCommand.length == 1) {
                     return !commandManager.info();

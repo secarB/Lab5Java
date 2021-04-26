@@ -43,8 +43,9 @@ public class CSVParser {
                 int index = 0;
                 String key = "";
                 while (dataScanner.hasNext()) {
-                	if (index == 0) {
+                	if ((index == 0) && (key=="")) {
                 		key = dataScanner.next();
+                		continue;
                 	}
                     data[index] = dataScanner.next();
                     index++;
