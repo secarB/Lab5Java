@@ -1,5 +1,7 @@
 package braces.core;
 
+import java.util.Scanner;
+
 import braces.commands.*;
 
 /**
@@ -44,7 +46,6 @@ public class CommandManager {
         UpdateCommand = updateCommand;
         RemoveLowerCommand = removeLowerCommand;
     }
-
     public boolean average()
     {
         return AverageOfHealthCommand.execute();
@@ -54,9 +55,9 @@ public class CommandManager {
     {
         return CountGreaterThanHeightCommand.execute(argument);
     }
-    public boolean insert(String argument)
+    public boolean insert(String argument,Scanner scanner)
     {
-        return  InsertCommand.execute(argument);
+        return  InsertCommand.execute(argument,scanner);
     }
     public boolean minByHealth()
     {
@@ -64,23 +65,23 @@ public class CommandManager {
     }
     public boolean remove(String argument)
     {
-        return RemoveCommand.execute();
+        return RemoveCommand.execute(argument);
     }
-    public boolean removeGreater()
+    public boolean removeGreater(Scanner scanner)
     {
-        return RemoveGreaterCommand.execute();
+        return RemoveGreaterCommand.execute(scanner);
     }
-    public boolean removeLower()
+    public boolean removeLower(Scanner scanner)
     {
-        return RemoveLowerCommand.execute();
+        return RemoveLowerCommand.execute(scanner);
     }
-    public boolean replaceIfGreater(String argument)
+    public boolean replaceIfGreater(String argument,Scanner scanner)
     {
-        return ReplaceIfGreaterCommand.execute(argument);
+        return ReplaceIfGreaterCommand.execute(argument,scanner);
     }
-    public boolean update(String argument)
+    public boolean update(String argument,Scanner scanner)
     {
-        return UpdateCommand.execute(argument);
+        return UpdateCommand.execute(argument,scanner);
     }
     public boolean clear()
     {

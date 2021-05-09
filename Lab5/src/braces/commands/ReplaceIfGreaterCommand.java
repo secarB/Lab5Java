@@ -1,5 +1,7 @@
 package braces.commands;
 
+import java.util.Scanner;
+
 import braces.core.Asker;
 import braces.core.CollectionManager;
 /**
@@ -14,7 +16,8 @@ public class ReplaceIfGreaterCommand extends AbstractCommand{
         this.collectionManager = collectionManager;
     }
     @Override
-    public boolean execute(String argument) {
+    public boolean execute(String argument,Scanner scanner) {
+    	asker.changeScanner(scanner);
         if (collectionManager.replaceGreater(argument,asker.createSpaceMarine())) return true;
         System.out.println("Key does not exist");
         return false;

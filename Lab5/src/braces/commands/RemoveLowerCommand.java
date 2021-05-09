@@ -1,5 +1,7 @@
 package braces.commands;
 
+import java.util.Scanner;
+
 import braces.core.Asker;
 import braces.core.CollectionManager;
 /**
@@ -14,7 +16,8 @@ public class RemoveLowerCommand extends AbstractCommand{
         this.collectionManager = collectionManager;
     }
     @Override
-    public boolean execute() {
+    public boolean execute(Scanner scanner) {
+    	asker.changeScanner(scanner);
         collectionManager.removeLower(asker.createSpaceMarine());
         return true;
     }

@@ -1,7 +1,12 @@
 package braces.core;
 
+import java.io.BufferedOutputStream;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -28,23 +33,30 @@ public class Commander {
 
     /**
      * Interactive mode when run program
+     * @throws Exception 
      */
-    public void interactiveMode()
+    public void interactiveMode() 
     {
+        System.out.print("* ");
         while (userScanner.hasNextLine())
         {
             String[] userCommand  = userScanner.nextLine().trim().split(" ");
             if(userCommand.length > 2 ){
                 System.out.println("Invalid command! Valid command should contain 1 or 2 arguments." +
                         " Please insert again!");
+                System.out.print("* ");
                 continue;
             }
             if(userCommand[0].equals("Exit")) {
                 System.exit(0);
             }
-            if(categorizeCommand(userCommand)){
-                System.out.println("Command is invalid. Can't execute!");
+            if(categorizeCommand(userCommand,new Scanner(System.in))){
+                System.out.println("Command is invalid. Can't execute!"); 
+                System.out.print("* ");
                 continue;
+            } else 
+            {
+            	System.out.print("* ");
             }
         }
 
@@ -80,7 +92,7 @@ public class Commander {
                 System.out.println("Can't execute! Invalid command! Valid command should contain 1 or 2 arguments.");
                 continue;
             }
-            if (categorizeCommand(userCommand)) {
+            if (categorizeCommand(userCommand,fileScanner)) {
                 System.out.println("Command is invalid. Can't execute!");
                 continue;
             }
@@ -94,7 +106,7 @@ public class Commander {
      * @param userCommand command from interactive mode
      * @return true/false if the command is successfully executed
      */
-    public boolean categorizeCommand(String [] userCommand)
+    public boolean categorizeCommand(String [] userCommand, Scanner fileScanner)
     {
         switch (userCommand[0]) {
             case "help":
@@ -118,7 +130,7 @@ public class Commander {
                 return true;
             case "insert":
                 if(userCommand.length == 2){
-                    return !commandManager.insert(userCommand[1]);
+                    return !commandManager.insert(userCommand[1],fileScanner);
                 }
                 System.out.println("Please insert the key");
                 return true;
@@ -136,13 +148,13 @@ public class Commander {
                 return true;
             case "update":
                 if(userCommand.length == 2){
-                    return !commandManager.insert(userCommand[1]);
+                    return !commandManager.update(userCommand[1],fileScanner);
                 }
                 System.out.println("Please insert the id");
                 return true;
             case "remove_key":
                 if(userCommand.length == 2){
-                    return !commandManager.insert(userCommand[1]);
+                    return !commandManager.remove(userCommand[1]);
                 }
                 System.out.println("Please insert the id");
                 return true;
@@ -154,19 +166,19 @@ public class Commander {
                 return true;
             case "remove_greater":
                 if(userCommand.length == 1) {
-                    return !commandManager.removeGreater();
+                    return !commandManager.removeGreater(fileScanner);
                 }
                 System.out.println("This command doesn't support argument!");
                 return true;
             case "remove_lower":
                 if(userCommand.length == 1) {
-                    return !commandManager.removeLower();
+                    return !commandManager.removeLower(fileScanner);
                 }
                 System.out.println("This command doesn't support argument!");
                 return true;
             case "replace_if_greater":
                 if(userCommand.length == 2){
-                    return !commandManager.replaceIfGreater(userCommand[1]);
+                    return !commandManager.replaceIfGreater(userCommand[1],fileScanner);
                 }
                 System.out.println("Please insert the key");
                 return true;
@@ -200,4 +212,5 @@ public class Commander {
                 return true;
         }
     }
+    
 }

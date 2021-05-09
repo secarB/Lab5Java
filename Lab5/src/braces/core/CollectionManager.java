@@ -46,10 +46,12 @@ public class CollectionManager {
      * Show info of all object in treemap
      */
     public void show(){
-        Set<String> keySet = map.keySet();
-        for (String key : keySet) {
-            map.get(key).info();
-        }
+    	if (map.size() == 0) System.out.println("Collection is empty"); else {
+	        Set<String> keySet = map.keySet();
+	        for (String key : keySet) {
+	            map.get(key).info();
+	        }
+    	}
     }
 
     /**
@@ -169,14 +171,15 @@ public class CollectionManager {
      * Returns current average of health
      * @return current average of health
      */
-    public double getAverageOfHealth()
-    {
-        long res = 0;
-        Set<String> keySet = map.keySet();
-        for (String key : keySet) {
-            res += map.get(key).getHealth();
-        }
-        return res /= map.size();
+    public String getAverageOfHealth()
+    {	
+    	if (map.size() == 0) return "Collection is empty"; else {
+    		long res = 0;
+	        Set<String> keySet = map.keySet();
+	        for (String key : keySet) {
+	            res += map.get(key).getHealth();
+	        }
+	        return String.valueOf(res /= map.size()); }
     }
 
     /**
@@ -192,17 +195,19 @@ public class CollectionManager {
      */
     public void minByHealth()
     {
-        long health = Long.MAX_VALUE;
-        String keyy = "";
-        Set<String> keySet = map.keySet();
-        for (String key : keySet) {
-            if (health < map.get(key).getHealth())
-            {
-                keyy = key;
-                health = map.get(key).getHealth();
-            }
-        }
-        map.remove(keyy);
+    	if (map.size() == 0) System.out.println("Collection is empty"); else {
+	        long health = Long.MAX_VALUE;
+	        String keyy = "";
+	        Set<String> keySet = map.keySet();
+	        for (String key : keySet) {
+	            if (health < map.get(key).getHealth())
+	            {
+	                keyy = key;
+	                health = map.get(key).getHealth();
+	            }
+	        }
+	        map.remove(keyy);
+    	}
     }
 
     /**

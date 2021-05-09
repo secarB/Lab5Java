@@ -1,5 +1,7 @@
 package braces.commands;
 
+import java.util.Scanner;
+
 import braces.core.Asker;
 import braces.core.CollectionManager;
 /**
@@ -14,9 +16,10 @@ public class UpdateCommand extends AbstractCommand{
         this.collectionManager = collectionManager;
     }
     @Override
-    public boolean execute(String argument) {
+    public boolean execute(String argument,Scanner scanner) {
+    	asker.changeScanner(scanner);
         long id = Long.parseLong(argument);
-        if (collectionManager.update(id, asker.createSpaceMarine())) return true;
+        if (collectionManager.update(id, asker.updateSpaceMarine(id))) return true;
         System.out.println("Can't find id:");
         return false;
     }

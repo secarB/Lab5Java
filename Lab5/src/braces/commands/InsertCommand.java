@@ -1,5 +1,7 @@
 package braces.commands;
 
+import java.util.Scanner;
+
 import braces.core.Asker;
 import braces.core.CollectionManager;
 /**
@@ -14,10 +16,12 @@ public class InsertCommand extends AbstractCommand{
         this.collectionManager = collectionManager;
     }
     @Override
-    public boolean execute(String argument)
+    public boolean execute(String argument, Scanner scanner)
     {
+    	asker.changeScanner(scanner);
         if (collectionManager.add(argument,asker.createSpaceMarine())) return true;
         System.out.println("Key already exists");
+        asker.backScanner();
         return false;
     }
 }

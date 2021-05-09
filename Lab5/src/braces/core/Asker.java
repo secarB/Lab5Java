@@ -1,6 +1,8 @@
 package braces.core;
 import braces.fields.*;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Random;
@@ -10,9 +12,8 @@ import java.util.Scanner;
  * This class use to get info when create a new element
  */
 public class Asker {
-    private static final Scanner scanner = new Scanner(System.in);
+    private Scanner scanner	= new Scanner(System.in);
     private final InputChecker inputChecker;
-
     /**
      * Constructor
      * @param ic input checker
@@ -20,12 +21,19 @@ public class Asker {
     public Asker(InputChecker ic){
         this.inputChecker = ic;
     }
-
+	public void changeScanner(Scanner fromFile) {
+		scanner = fromFile;	
+	}
+	public void backScanner()
+	{
+		Scanner fromKeyBoard = new Scanner(System.in);
+		scanner = fromKeyBoard;
+	}
     /**
      * Returns a space marine
      * @return space marine to be returned
      */
-    public SpaceMarine createSpaceMarine()
+    public SpaceMarine createSpaceMarine() 
     {
         SpaceMarine spaceMarine = new SpaceMarine();
         spaceMarine.setId(generateID());
@@ -38,8 +46,24 @@ public class Asker {
         spaceMarine.setChapter(chapterAsker());
         LocalDate date = LocalDate.now();
         spaceMarine.setCreationDate(date);
+        System.out.println("Created sucessfully");
         return spaceMarine;
     }
+    public SpaceMarine updateSpaceMarine(long id) {
+    	SpaceMarine spaceMarine = new SpaceMarine();
+        spaceMarine.setName(nameAsker());
+        spaceMarine.setId(id);
+        spaceMarine.setCoordinates(coordinatesAsker());
+        spaceMarine.setHeight(heightAsker());
+        spaceMarine.setHealth(healthAsker());
+        spaceMarine.setCategory(categoryAsker());
+        spaceMarine.setMeleeWeapon(meleeWeaponAsker());
+        spaceMarine.setChapter(chapterAsker());
+        LocalDate date = LocalDate.now();
+        spaceMarine.setCreationDate(date);
+        System.out.println("Created sucessfully");
+        return spaceMarine;
+	}
 
     /**
      * Automatically generates an ID
@@ -65,7 +89,7 @@ public class Asker {
     public String nameAsker()
     {
     	System.out.println("Insert name: ");
-        while (true) {
+        while (scanner.hasNextLine()) {
         	String[] input = scanner.nextLine().trim().split(" ");
             if (input.length != 1) {
                 System.out.println("Please insert 1 name!");
@@ -73,7 +97,9 @@ public class Asker {
             	if ((input[0] != null) && (!input[0].equals(""))) return input[0];
             	System.out.println("Name can't be null or empty");
             }
-        }
+        } 
+        return nameAsker();
+   
     }
 
     /**
