@@ -126,6 +126,7 @@ public class Asker {
         while (scanner.hasNext()) {
             Coordinates coordinates = new Coordinates();
             String[] input = scanner.nextLine().trim().split(" ");
+        	if (input.length == 1 && input[0].equals("")) continue;
             if(input.length != 2 ){
                 System.out.println("please insert exactly two number!");
             }
@@ -158,6 +159,7 @@ public class Asker {
     {
         while (scanner.hasNext()) {
             String[] input = scanner.nextLine().trim().split(" ");
+        	if (input.length == 1 && input[0].equals("")) continue;
             if (input.length != 1) {
                 System.out.println("Please insert exactly one number!");
             } else {
@@ -177,6 +179,7 @@ public class Asker {
         while (scanner.hasNext())
         {
             String[] input = scanner.nextLine().trim().split(" ");
+        	if (input.length == 1 && input[0].equals("")) continue;
             if(input.length != 1 ) {
                 System.out.println("Please insert exactly one number!");
             }
